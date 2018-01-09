@@ -1,0 +1,81 @@
+// Colors
+$bg: rgb(0,0,32);
+$text: lightgrey;
+$work: purple;
+$break: green;
+
+html {
+    height: 100%;
+    }
+body {
+    font-size: 1rem;
+    background-color: $bg;
+    }
+#container {
+    font-size: 1rem;
+    }
+.pomodoro {
+    margin: 100px auto 100px;
+    width: 500px;
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: 50px 60px 300px 60px 50px;
+    grid-auto-flow: row;
+    grid-row-gap: 10px;
+    grid-column-gap: 0px;
+    text-align: center;
+    }
+.title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 6;
+    font-size: 3em;
+    color: $text;
+    }
+.work-label, .break-label {
+    margin: 30px 0px 10px 0px;
+    transform: rotate(-90deg);
+    line-height: 50px;
+    color: $text;
+    }
+.btn {
+    margin: 25px auto;
+    height: 45px;
+    width: 45px;
+    color: $text;
+    border-radius: 50%;
+    border-color: rgba(255,255,255,0.25);
+    border-style: none;
+    }
+.work-less, .work-more {
+    background-color: $work;
+    }
+.break-less, .break-more {
+    background-color: $break; 
+    }
+.work-timer {
+    margin: 0 auto;
+    width: 300px;
+    background-color: $work;
+    border-radius: 10px;
+    }
+.break-timer {
+    margin: 0 auto;
+    width: 300px;
+    background-color: $break;
+    border-radius: 10px;
+    }
+.spacer {
+    margin: 30px 0px 10px 0px;
+    transform: rotate(-90deg);
+    line-height: 50px;
+    color: $text;
+    }
+.spacer2 {
+    margin: 20px 0px 20px 0px;
+    transform: rotate(-90deg);
+    line-height: 50px;
+    color: $text;
+    }
+.flip-clock-label { 
+    display: none;
+    }
